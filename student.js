@@ -25,7 +25,7 @@ class Student {
     }
 }
 
-var programme = new Programme ("123", "MSc Computing");
+var programme = new Programme("123", "MSc Computing");
 
 var students = [
     new Student("001", "Shoaib", programme),
@@ -44,7 +44,7 @@ function printStudents() {
         for (var student of students){
             html += student.tableRow();
         }
-    html += "</table>";
+    html += `</table>`;
     var main = document.getElementById("main");
     main.innerHTML = html;
 }
